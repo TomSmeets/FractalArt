@@ -1,8 +1,8 @@
 name:                FractalArt
 version:             0.2.0.0
-synopsis:            Generates colorfull wallpapers
+synopsis:            Generates colorful wallpapers
 description:
-	This application generates colorfull images as a wallpaper
+	This application generates colorful images as a wallpaper
 license:             MIT
 license-file:        LICENSE
 author:              Tom

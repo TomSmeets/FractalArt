@@ -16,8 +16,13 @@ executable FractalArt
   include-dirs:     cbits
   if os(linux)
       extra-libraries:  X11
+  if os(darwin)
+      cc-options:       -fmodules
+      extra-libraries:  objc
+      c-sources:        cbits/wallpaper.m
   other-extensions: ForeignFunctionInterface
-  c-sources:        cbits/wallpaper.c
+  if !os(darwin)
+      c-sources:        cbits/wallpaper.c
   build-depends:    base        >=4.7  && <4.9
                   , random      >=1.0  && <1.2
                   , mwc-random  >=0.13 && <0.14

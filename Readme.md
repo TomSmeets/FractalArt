@@ -16,6 +16,13 @@ It automatically detects your screen resolution.
 
 # Installation
 
+####Arch Linux
+
+
+This package is available in the AUR as fractalart-git. 
+
+####Building manually
+
 Make sure you have cabal-install and zlib installed.
 
 Then do:

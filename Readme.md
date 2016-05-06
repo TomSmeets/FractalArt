@@ -23,19 +23,17 @@ This package is available in the AUR as fractalart-git.
 
 ####Building manually
 
-Make sure you have cabal-install and zlib installed.
+Make sure you have [stack](http://docs.haskellstack.org/en/stable/install_and_upgrade/) and zlib installed.
 
 Then do:
 ```shell
 $ git clone https://github.com/TomSmeets/FractalArt.git
 $ cd FractalArt
-$ cabal update
-$ cabal install
+$ stack install
 ```
 
-Your executable is: `dist/build/FractalArt/FractalArt`
-
-and on linux also located inside: `~/.cabal/bin`
+Your executable will copied to your [local-bin path](http://docs.haskellstack.org/en/stable/install_and_upgrade/#path).
+For Unix systems this path is `$HOME/.local/bin` and on Windows `%APPDATA%\local\bin`.
 
 # Windows
 If you want a new wallpaper each time you start your PC,

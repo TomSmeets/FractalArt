@@ -23,7 +23,7 @@ executable FractalArt
   other-extensions: ForeignFunctionInterface
   if !os(darwin)
       c-sources:        cbits/wallpaper.c
-  build-depends:    base
+  build-depends:    base > 4 && < 5
                   , random
                   , mwc-random
                   , directory

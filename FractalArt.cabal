@@ -1,5 +1,5 @@
 name:                FractalArt
-version:             0.2.0.2
+version:             0.2.0.3
 synopsis:            Generates colorful wallpapers
 description:         This application generates colorful images as a wallpaper
 homepage:            https://github.com/TomSmeets/FractalArt
@@ -11,7 +11,11 @@ copyright:           2016 Tom Smeets
 category:            Graphics
 build-type:          Simple
 cabal-version:       >=1.10
-extra-source-files:  README.md
+extra-source-files:
+  cbits/wallpaper.h
+  README.md
+  examples/image0.bmp
+  examples/image1.bmp
 
 executable FractalArt
   main-is:          Main.hs
@@ -24,7 +28,8 @@ executable FractalArt
       c-sources:        cbits/wallpaper.m
   other-extensions: ForeignFunctionInterface
   if !os(darwin)
-      c-sources:        cbits/wallpaper.c
+      c-sources:
+        cbits/wallpaper.c
   build-depends:    base > 4 && < 5
                   , random
                   , mwc-random

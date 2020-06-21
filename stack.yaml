@@ -1,4 +1,4 @@
-resolver: lts-12.10
+resolver: lts-16.1
 
 packages:
 - '.'
@@ -8,3 +8,7 @@ extra-deps: []
 flags: {}
 
 extra-package-dbs: []
+
+nix:
+  enable: true
+  packages: [ zlib, x11 ]

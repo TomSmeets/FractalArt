@@ -12,5 +12,5 @@ with pkgs.haskellPackages; haskellPackages.mkDerivation {
   executableSystemDepends = with pkgs; [ xorg.libX11 zlib ];
   homepage = "https://github.com/TomSmeets/FractalArt";
   description = "Generates colorful wallpapers";
-  license = stdenv.lib.licenses.mit;
+  license = pkgs.stdenv.lib.licenses.mit;
 }

@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-@import AppKit;
+#import <AppKit/AppKit.h>
 
 NSSize getRootWindowSize() {
   @autoreleasepool {
